@@ -29,6 +29,7 @@
 		F85803F71D44EE6400C103B9 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		F85803F81D44F2FD00C103B9 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		F85803F91D44F2FD00C103B9 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		F85803FB1D44F97E00C103B9 /* BMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMP.h; sourceTree = "<group>"; };
 		F89B7AD41D3EA155000FE747 /* Szkolenie_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Szkolenie_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89B7AD71D3EA156000FE747 /* basics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basics.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +69,7 @@
 				F85803F51D44ED8200C103B9 /* main.cpp */,
 				F85803F81D44F2FD00C103B9 /* Model.cpp */,
 				F85803F91D44F2FD00C103B9 /* Model.hpp */,
+				F85803FB1D44F97E00C103B9 /* BMP.h */,
 			);
 			path = Szkolenie_1;
 			sourceTree = "<group>";
