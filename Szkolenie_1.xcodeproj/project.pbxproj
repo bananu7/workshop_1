@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F85803F61D44ED8200C103B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F85803F51D44ED8200C103B9 /* main.cpp */; };
+		F85803FA1D44F2FD00C103B9 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F85803F81D44F2FD00C103B9 /* Model.cpp */; };
 		F89B7AD81D3EA156000FE747 /* basics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F89B7AD71D3EA156000FE747 /* basics.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		F85803F51D44ED8200C103B9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F85803F71D44EE6400C103B9 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		F85803F81D44F2FD00C103B9 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		F85803F91D44F2FD00C103B9 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
 		F89B7AD41D3EA155000FE747 /* Szkolenie_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Szkolenie_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89B7AD71D3EA156000FE747 /* basics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basics.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				F85803F71D44EE6400C103B9 /* teapot.obj */,
 				F89B7AD71D3EA156000FE747 /* basics.cpp */,
 				F85803F51D44ED8200C103B9 /* main.cpp */,
+				F85803F81D44F2FD00C103B9 /* Model.cpp */,
+				F85803F91D44F2FD00C103B9 /* Model.hpp */,
 			);
 			path = Szkolenie_1;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85803FA1D44F2FD00C103B9 /* Model.cpp in Sources */,
 				F85803F61D44ED8200C103B9 /* main.cpp in Sources */,
 				F89B7AD81D3EA156000FE747 /* basics.cpp in Sources */,
 			);
