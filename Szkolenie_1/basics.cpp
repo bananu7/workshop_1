@@ -57,6 +57,7 @@ void part2() {
 
     // Common operations
     {
+        std::string a = "abcdefxyz";
         std::string c = a.substr(3,3); // first character inclusive, length
     }
 }
