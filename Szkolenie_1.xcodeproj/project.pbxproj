@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F89B7AD81D3EA156000FE747 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F89B7AD71D3EA156000FE747 /* main.cpp */; };
+		F85803F61D44ED8200C103B9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F85803F51D44ED8200C103B9 /* main.cpp */; };
+		F89B7AD81D3EA156000FE747 /* basics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F89B7AD71D3EA156000FE747 /* basics.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F85803F51D44ED8200C103B9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F89B7AD41D3EA155000FE747 /* Szkolenie_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Szkolenie_1; sourceTree = BUILT_PRODUCTS_DIR; };
-		F89B7AD71D3EA156000FE747 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F89B7AD71D3EA156000FE747 /* basics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basics.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		F89B7AD61D3EA155000FE747 /* Szkolenie_1 */ = {
 			isa = PBXGroup;
 			children = (
-				F89B7AD71D3EA156000FE747 /* main.cpp */,
+				F89B7AD71D3EA156000FE747 /* basics.cpp */,
+				F85803F51D44ED8200C103B9 /* main.cpp */,
 			);
 			path = Szkolenie_1;
 			sourceTree = "<group>";
@@ -118,7 +121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89B7AD81D3EA156000FE747 /* main.cpp in Sources */,
+				F85803F61D44ED8200C103B9 /* main.cpp in Sources */,
+				F89B7AD81D3EA156000FE747 /* basics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,7 @@
 				F89B7ADD1D3EA156000FE747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
