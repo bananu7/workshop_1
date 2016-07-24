@@ -37,3 +37,21 @@ Model loadModel(std::istream& stream) {
     
     return model;
 }
+
+std::pair<Vertex, Vertex> findExtents(Model const& model) {
+    Vertex min, max;
+    
+    auto compareX = [](Vertex const& a, Vertex const& b) { return a.x < b.x; };
+    auto compareY = [](Vertex const& a, Vertex const& b) { return a.y < b.y; };
+    auto compareZ = [](Vertex const& a, Vertex const& b) { return a.z < b.z; };
+    
+    min.x = std::min_element(model.vertices.begin(),  model.vertices.end(), compareX) -> x;
+    min.y = std::min_element(model.vertices.begin(),  model.vertices.end(), compareY) -> y;
+    min.z = std::min_element(model.vertices.begin(),  model.vertices.end(), compareZ) -> z;
+    
+    max.x = std::max_element(model.vertices.begin(),  model.vertices.end(), compareX) -> x;
+    max.y = std::max_element(model.vertices.begin(),  model.vertices.end(), compareY) -> y;
+    max.z = std::max_element(model.vertices.begin(),  model.vertices.end(), compareZ) -> z;
+    
+    return { min, max };
+}

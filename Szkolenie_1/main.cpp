@@ -17,4 +17,6 @@ int main(int argc, const char* argv[]) {
     std::cout << "Vertices: " << model.vertices.size() << '\n'
               << "Faces: " << model.faces.size() << '\n';
     
+    auto extents = findExtents(model);
+    std::cout << "Extents: " << extents.first << " - " << extents.second << '\n';
 }
