@@ -26,24 +26,28 @@ int main(int argc, const char* argv[]) {
     auto red = ColorBGRA8 { 0, 0, 255 };
     auto black = ColorBGRA8 { 0, 0, 0 };
     {
-        std::ofstream ofile("image.bmp", std::ios::binary);
-        
-        std::vector<ColorBGRA8> pixels(400 * 400, black);
-        
-        auto setPixel = [&pixels](unsigned x, unsigned y, ColorBGRA8 color) {
-            pixels[y * 400 + x] = color;
-        };
-        
         float extentSizeX = extents.second.x - extents.first.x;
         float extentSizeY = extents.second.y - extents.first.y;
-        float extentSizeZ = extents.second.z - extents.first.z;
+        //float extentSizeZ = extents.second.z - extents.first.z;
+        
+        float imageRatio = extentSizeX / extentSizeY;
+        
+        std::ofstream ofile("image.bmp", std::ios::binary);
+        const unsigned height = 400;
+        const unsigned width = imageRatio * height;
+    
+        std::vector<ColorBGRA8> pixels(width * height, black);
+        
+        auto setPixel = [&pixels, &width](unsigned x, unsigned y, ColorBGRA8 color) {
+            pixels[y * width + x] = color;
+        };
         
         for (auto const& vertex : model.vertices) {
-            unsigned x = (vertex.x - extents.first.x) / extentSizeX * 400;
-            unsigned y = (vertex.y - extents.first.y) / extentSizeY * 400;
+            unsigned x = (vertex.x - extents.first.x) / extentSizeX * width;
+            unsigned y = (vertex.y - extents.first.y) / extentSizeY * height;
             setPixel(x, y, red);
         }
         
-        saveBmpFile(pixels, 400, ofile);
+        saveBmpFile(pixels, width, ofile);
     }
 }
